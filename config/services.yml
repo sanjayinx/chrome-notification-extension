@@ -1,1 +1,15 @@
 services:
+    paul999.browsernotification.notification.method.browser:
+        class: paul999\browsernotification\browser
+        scope: prototype
+        arguments:
+            - @user_loader
+            - @dbal.conn
+            - @cache.driver
+            - @user
+            - @auth
+            - @config
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: notification.method }
