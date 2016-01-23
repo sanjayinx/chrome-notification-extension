@@ -1,0 +1,32 @@
+{
+	"name": "paul999/browsernotification",
+	"type": "phpbb-extension",
+	"description": "This extension adds a new notification type, which uses chrome browser notifications to delivery notifications.",
+	"homepage": "http://www.phpbbextensions.io",
+	"version": "0.0.1",
+	"keywords": [],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Paul Sohier",
+			"email": "paul@phpbb.com",
+			"homepage": "http://www.paulsohier.nl",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.9",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"phing/phing": "2.4.*",
+		"phpbb/epv": "dev-master",
+        "phpbb/phpbb": "~3.1"
+	},
+	"extra": {
+		"display-name": "Browser notifications",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0,<3.2.0@dev"
+		}
+	}
+}
